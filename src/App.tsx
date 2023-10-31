@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Hero />
-      {/*<About />
-      <Projects />
+      <About />
+      {/*<Projects />
       <Contact />
   <Menu /> */}
     </>
