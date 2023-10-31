@@ -39,7 +39,7 @@ const Hero = () => {
               <Typewriter
                 words={[
                   "Software Engineer",
-                  "Computer Science",
+                  "CSUF Student",
                   "Software Developer",
                   "Web Developer",
                   "Programmer",
