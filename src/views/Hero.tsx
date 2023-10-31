@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="w-full xl:w-fit">
           <h1 className="w-full xl:w-fit text-center xl:text-start text-4xl sm:text-6xl lg:text-8xl font-bolt text-textPrimary uppercase">
             {" "}
-            Creative
+            Justin Sohn
             <br />
             <span className="text-secondary">
               <Typewriter
