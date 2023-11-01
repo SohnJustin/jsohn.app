@@ -8,7 +8,7 @@ import projectsPageImg from "../assets/projects-page.svg";
 import { Button, Card, Reveal } from "../components";
 
 // data
-import { projects } from "../data";
+import { projects } from "./data";
 
 // framer-motion
 import { motion } from "framer-motion";
