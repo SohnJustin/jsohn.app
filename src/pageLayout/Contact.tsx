@@ -30,17 +30,36 @@ const Contact = () => {
         items-center xl:items-start gap-12 w-full pt-20 pb-20 sm:pb-16 px-12"
       >
         <div className=" flex-1 flex flex-col gap-4">
-          <h2
-            className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] 
+          <Reveal>
+            <h2
+              className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] 
                 font-bold text-textPrimary"
-          >
-            Have any questions for <span className="text-secondary"> me?</span>
-          </h2>
+            >
+              Have any questions for{" "}
+              <span className="text-secondary"> me?</span>
+            </h2>
+          </Reveal>
           <div className=" m-auto text-center">
-            <img src={Laugh} alt="" className=" max-h-[348px] max-w-[350px]" />
+            <motion.img
+              variants={scale()}
+              transition={transition()}
+              initial="hidden"
+              whileInView={"visible"}
+              viewport={{ once: false }}
+              src={Laugh}
+              alt=""
+              className=" max-h-[348px] max-w-[350px]"
+            />
           </div>
         </div>
-        <div className="flex-1 flex flex-col gap-6 w-full max-w-[696px]">
+        <motion.div
+          variants={fadeIn("up")}
+          transition={transition()}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: false }}
+          className="flex-1 flex flex-col gap-6 w-full max-w-[696px]"
+        >
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <LabelInput labelText="Your name" placeholderText="Name" />
             <LabelInput labelText="Your email" placeholderText="Email" />
@@ -55,7 +74,7 @@ const Contact = () => {
           </div>
 
           <Button secondary>Send Message</Button>
-        </div>
+        </motion.div>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-divider" />
     </div>
