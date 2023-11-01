@@ -17,6 +17,13 @@ const Menu = () => {
      -translate-x-1/2 bg-accent rounded-t-xl sm:rounded-full py-3 px-6 flex
       items-center justify-around sm:justify-center gap-12 z-30"
     >
+      <Link to="home" smooth>
+        <Tooltip title="Home" placeholder="top" arrow>
+          <IconButton className="group">
+            <HomeIcon className="text-white group-hover:text-secondary" />
+          </IconButton>
+        </Tooltip>
+      </Link>
       <Link to="about" smooth>
         <Tooltip title="About" placeholder="top" arrow>
           <IconButton className="group">
@@ -35,13 +42,6 @@ const Menu = () => {
         <Tooltip title="Contact" placeholder="top" arrow>
           <IconButton className="group">
             <MailIcon className="text-white group-hover:text-secondary" />
-          </IconButton>
-        </Tooltip>
-      </Link>
-      <Link to="home" smooth>
-        <Tooltip title="Home" placeholder="top" arrow>
-          <IconButton className="group">
-            <HomeIcon className="text-white group-hover:text-secondary" />
           </IconButton>
         </Tooltip>
       </Link>
