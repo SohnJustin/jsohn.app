@@ -31,7 +31,7 @@ const Projects = () => {
   };
   return (
     <div
-      id="project"
+      id="projects"
       className="min-h-screen"
       style={{
         background: `url(${projectsPageImg})`,
