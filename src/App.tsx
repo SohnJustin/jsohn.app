@@ -1,5 +1,5 @@
 // views
-import { About, Contact, Hero, Projects } from "./views";
+import { About, Contact, Hero, Projects } from "./pageLayout";
 
 // components
 import { Menu } from "./components";
