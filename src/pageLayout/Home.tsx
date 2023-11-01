@@ -17,7 +17,7 @@ import { motion } from "framer-motion";
 import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
 
-const Hero = () => {
+const Home = () => {
   return (
     <div
       id="home"
@@ -90,4 +90,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;

@@ -1,5 +1,5 @@
 // views
-import { About, Contact, Hero, Projects } from "./pageLayout";
+import { About, Contact, Home, Projects } from "./pageLayout";
 
 // components
 import { Menu } from "./components";
@@ -7,7 +7,7 @@ import { Menu } from "./components";
 function App() {
   return (
     <>
-      <Hero />
+      <Home />
       <About />
       <Projects />
       <Contact />
