@@ -39,19 +39,10 @@ const About = () => {
           </h2>
 
           <p className="text-center xl:text-start text-base sm:text-lg text-textSecondary">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit
-            repellendus eos iure soluta eum sapiente blanditiis amet id?
-            Perferendis doloremque repudiandae dolor repellat, officia tempora
-            nemo necessitatibus laboriosam est natus rerum. Officia totam
-            recusandae animi. Illo eaque recusandae cupiditate eligendi
-            dignissimos maxime harum sint fugiat officia iste eum numquam
-            temporibus, officiis atque ullam reprehenderit molestias dicta
-            deserunt earum dolore autem eius impedit! Provident, officia culpa!
-            Sint maiores pariatur voluptate. Odit, soluta animi. Consequuntur
-            doloremque in voluptatibus necessitatibus. Minus nihil deleniti
-            aspernatur aut sequi perferendis laudantium a eius accusantium
-            voluptatum vel corrupti adipisci quaerat, facere minima iure error,
-            cupiditate velit quam!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            sunt vitae ipsa. Fuga sint unde alias adipisci sequi perferendis
+            esse. Veritatis nostrum, nihil atque quaerat modi dolore deserunt
+            similique vel.
           </p>
           <div className="flex items-center justify-center xl:justify-start gap-6">
             <a href="https://www.facebook.com/justin.sohn.14" target="_blank">

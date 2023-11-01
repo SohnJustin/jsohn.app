@@ -1,4 +1,4 @@
-import professionalProjectOne from "./assets/CSUF Wordle Play Page.png";
+import uiUxOne from "./assets/ui-ux-project-one.svg";
 import uiUxTwo from "./assets/ui-ux-project-two.svg";
 import uiUxThree from "./assets/ui-ux-project-three.svg";
 import webOne from "./assets/web-project-one.jpeg";
@@ -15,8 +15,8 @@ export const projects = [
   {
     id: 0,
     category: "uiUx",
-    img: professionalProjectOne,
-    title: "CSUF Wordle Clone",
+    img: uiUxOne,
+    title: "Professional Experience 1",
   },
   {
     id: 1,
