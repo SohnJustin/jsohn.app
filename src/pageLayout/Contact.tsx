@@ -1,7 +1,7 @@
 // assets
 import contactPageImg from "../assets/contact-page.svg";
 import contactIllustration from "../assets/contact-illustration.svg";
-import Angry from "../assets/ANGRY.png";
+import Laugh from "../assets/LAUGH.png";
 
 // components
 import { Button, LabelInput, Reveal } from "../components";
@@ -37,7 +37,7 @@ const Contact = () => {
             Have any questions for <span className="text-secondary"> me?</span>
           </h2>
           <div className=" m-auto text-center">
-            <img src={Angry} alt="" className=" max-h-[348px] max-w-[350px]" />
+            <img src={Laugh} alt="" className=" max-h-[348px] max-w-[350px]" />
           </div>
         </div>
         <div className="flex-1 flex flex-col gap-6 w-full max-w-[696px]">

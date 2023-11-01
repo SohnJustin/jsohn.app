@@ -5,7 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import Laugh from "../assets/LAUGH.png";
+import Angry from "../assets/ANGRY.png";
 
 // components
 import { Reveal } from "../components";
@@ -70,7 +70,7 @@ const About = () => {
 
           <div className="flex-1 flex items-center justify-center">
             <img
-              src={Laugh}
+              src={Angry}
               alt=""
               className="w-full max-w-[300px] xl:max-w-[500px]"
             />
