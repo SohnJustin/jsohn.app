@@ -41,7 +41,7 @@ const About = () => {
           </Reveal>
           <Reveal>
             <p className="text-center xl:text-start text-base sm:text-lg text-textSecondary">
-              Hello there! I'm Justin Sohn, a Computer Science major at
+              Hello there! 👋🏻 I'm Justin Sohn, a Computer Science major at
               California State University, Fullerton. My enthusiasm lies in
               front-end software engineering, and I'm on the lookout for
               exciting internships and entry-level opportunities to enhance my
