@@ -3,9 +3,13 @@ import homePageImg from "../assets/home-page.svg";
 import homePageIllustation from "../assets/hero-illustration.svg";
 import downloadIcon from "../assets/download-btn-icon.svg";
 import Wave from "../assets/WAVE.png";
+import MyResume from "../assets/JustinSohnResume.pdf";
 
 // components
 import { Button } from "../components";
+
+// react-scroll
+import { Link } from "react-scroll";
 
 // react-simple-typewriter
 import { Typewriter } from "react-simple-typewriter";
@@ -18,6 +22,14 @@ import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
 
 const Home = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = MyResume;
+    link.download = "JustinSohnResume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div
       id="home"
@@ -70,8 +82,12 @@ const Home = () => {
             viewport={{ once: false }}
             className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start"
           >
-            <Button secondary>Contact Me</Button>
-            <Button icon={downloadIcon}>Download CV</Button>
+            <Link to="contact" smooth>
+              <Button secondary>Contact Me</Button>
+            </Link>
+            <Button onClick={handleDownload} icon={downloadIcon}>
+              Download CV
+            </Button>
           </motion.div>
         </div>
         <motion.img
