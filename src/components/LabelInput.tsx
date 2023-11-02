@@ -22,6 +22,7 @@ const LabelInput: FC<LabelInputProps> = ({
       </label>
       {textarea ? (
         <textarea
+          name={placeholderText}
           id={placeholderText}
           rows={9}
           placeholder={placeholderText}
@@ -30,6 +31,7 @@ const LabelInput: FC<LabelInputProps> = ({
         ></textarea>
       ) : (
         <input
+          name={placeholderText}
           type="text"
           id={placeholderText}
           placeholder={placeholderText}
