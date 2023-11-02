@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d19b6fa0.css",
+    "main.js": "/static/js/main.6970da16.js",
+    "static/media/ui-ux-project-three.svg": "/static/media/ui-ux-project-three.c4ab1a68cf6682639663adc05e33a5ef.svg",
+    "static/media/ui-ux-project-two.svg": "/static/media/ui-ux-project-two.220ed19d358c642386f2dda1fa3a313e.svg",
+    "static/media/projects-page.svg": "/static/media/projects-page.a288ad051245dde972b95af641c0190d.svg",
+    "static/media/ui-ux-project-one.svg": "/static/media/ui-ux-project-one.8987ef6161957e5ced22044ec2c410f3.svg",
+    "static/media/about-me-page.svg": "/static/media/about-me-page.de79a72938ed30948f5289360b9f8b19.svg",
+    "static/media/web-project-one.jpeg": "/static/media/web-project-one.7ef0461f72aedc165f64.jpeg",
+    "static/media/WAVE.png": "/static/media/WAVE.e4f09e45b508d117c7d2.png",
+    "static/media/web-project-three.jpeg": "/static/media/web-project-three.5fc24b8e86904bfe5856.jpeg",
+    "static/media/home-page.svg": "/static/media/home-page.3d99bbe3e9e69e026163d1257c19de1c.svg",
+    "static/media/ANGRY.png": "/static/media/ANGRY.e26ed710d9a2a497fda2.png",
+    "static/media/web-project-two.jpeg": "/static/media/web-project-two.49a6c95132ffa750cd8b.jpeg",
+    "static/media/LAUGH.png": "/static/media/LAUGH.e2ff9eef6f5afd4659d4.png",
+    "static/media/contact-page.svg": "/static/media/contact-page.bb6dd0d5c4b36d67c1d4383d9a597201.svg",
+    "index.html": "/index.html",
+    "static/media/download-btn-icon.svg": "/static/media/download-btn-icon.db00ff1fa6f1d172b12f9e1441c6d79c.svg",
+    "main.d19b6fa0.css.map": "/static/css/main.d19b6fa0.css.map",
+    "main.6970da16.js.map": "/static/js/main.6970da16.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d19b6fa0.css",
+    "static/js/main.6970da16.js"
+  ]
+}
