@@ -91,31 +91,39 @@ const Contact = () => {
             />
           </div>
         </div>
-        {
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="flex-1 flex flex-col gap-6 w-full max-w-[696px]">
-              <div className="flex flex-col sm:flex-row items-center gap-6">
-                <LabelInput labelText="Your name" placeholderText="Name" />
-                <LabelInput labelText="Your email" placeholderText="Email" />
+        <motion.div
+          variants={fadeIn("up")}
+          transition={transition()}
+          initial="hidden"
+          whileInView={"visible"}
+          viewport={{ once: false }}
+          className="flex-1 flex flex-col gap-6 w-full max-w-[696px]"
+        >
+          {
+            <form ref={form} onSubmit={sendEmail}>
+              <div className="flex-1 flex flex-col gap-6 w-full max-w-[696px]">
+                <div className="flex flex-col sm:flex-row items-center gap-6">
+                  <LabelInput labelText="Your name" placeholderText="Name" />
+                  <LabelInput labelText="Your email" placeholderText="Email" />
+                </div>
+                <div className="flex flex-col sm:flex-row items-center gap-6">
+                  <LabelInput
+                    labelText="Your message"
+                    placeholderText="Message"
+                    textarea
+                  />
+                </div>
+                <button
+                  type="submit"
+                  value="Send"
+                  className=" hover:bg-hoverSecondary  bg-secondary : bg-accent transition-all ease-linear duration-300 py-2.5 px-8 rounded-full text-white text-base sm:text-lg text-bold relative w-full sm:w-fit"
+                >
+                  Send Message
+                </button>
               </div>
-              <div className="flex flex-col sm:flex-row items-center gap-6">
-                <LabelInput
-                  labelText="Your message"
-                  placeholderText="Message"
-                  textarea
-                />
-              </div>
-              <button
-                type="submit"
-                value="Send"
-                className=" hover:bg-hoverSecondary  bg-secondary : bg-accent transition-all ease-linear duration-300 py-2.5 px-8 rounded-full text-white text-base sm:text-lg text-bold relative w-full sm:w-fit"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
-        }
-        {/*
+            </form>
+          }
+          {/*
         <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
           <input type="text" name="user_name" />
@@ -126,28 +134,6 @@ const Contact = () => {
           <input type="submit" value="Send" />
         </form>
       */}
-        <motion.div
-          variants={fadeIn("up")}
-          transition={transition()}
-          initial="hidden"
-          whileInView={"visible"}
-          viewport={{ once: false }}
-          className="flex-1 flex flex-col gap-6 w-full max-w-[696px]"
-        >
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <LabelInput labelText="Your name" placeholderText="Name" />
-            <LabelInput labelText="Your email" placeholderText="Email" />
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <LabelInput
-              labelText="Your message"
-              placeholderText="Message"
-              textarea
-            />
-          </div>
-
-          <Button secondary>Send Message</Button>
         </motion.div>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-divider" />
