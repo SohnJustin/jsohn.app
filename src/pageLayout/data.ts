@@ -1,7 +1,7 @@
-import uiUxOne from "../assets/ui-ux-project-one.svg";
-import uiUxTwo from "../assets/ui-ux-project-two.svg";
+import CSUFWordle from "../assets/CSUF-Wordle-Play-Page.png";
+import CSUFDatabase from "../assets/CSUFDatabase.png";
 import uiUxThree from "../assets/ui-ux-project-three.svg";
-import webOne from "../assets/web-project-one.jpeg";
+import SpotifyClone from "../assets/spotify_logo.png";
 import webTwo from "../assets/web-project-two.jpeg";
 import webThree from "../assets/web-project-three.jpeg";
 
@@ -14,38 +14,41 @@ interface Project {
 export const projects = [
   {
     id: 0,
-    category: "uiUx",
-    img: uiUxOne,
-    title: "Professional Experience 1",
+    category: "professional",
+    img: CSUFWordle,
+    title: "CSUF Themed Wordle",
   },
   {
     id: 1,
-    category: "uiUx",
-    img: uiUxTwo,
-    title: "Professional Experience 2",
+    category: "professional",
+    img: CSUFDatabase,
+    title: "Student Database Website",
   },
-  {
+  /* {
     id: 2,
-    category: "uiUx",
+    category: "professional",
     img: uiUxThree,
     title: "Professional Experience 3",
   },
+  */
   {
     id: 3,
-    category: "web",
-    img: webOne,
+    category: "project",
+    img: SpotifyClone,
     title: "Spotify Full Stack Clone",
   },
+  /*
   {
     id: 4,
-    category: "web",
+    category: "project",
     img: webTwo,
     title: "Project 2 ",
   },
   {
     id: 5,
-    category: "web",
+    category: "project",
     img: webThree,
     title: "Project 3",
   },
+  */
 ];
