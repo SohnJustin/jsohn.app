@@ -9,7 +9,7 @@ import MyResume from "../assets/JustinSohnResume.pdf";
 import { Button } from "../components";
 
 // react-scroll
-import { Link } from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 
 // react-simple-typewriter
 import { Typewriter } from "react-simple-typewriter";
@@ -20,6 +20,7 @@ import { motion } from "framer-motion";
 // utils
 import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
+import { offset } from "@popperjs/core";
 
 const Home = () => {
   const handleDownload = () => {
@@ -29,6 +30,14 @@ const Home = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+  const scrollToSection = () => {
+    const targetSection = document.getElementById("contact");
+    if (targetSection) {
+      const offset = targetSection.offsetTop;
+
+      animateScroll.scrollTo(offset, { smooth: true });
+    }
   };
   return (
     <div
@@ -57,13 +66,11 @@ const Home = () => {
             <span className="text-secondary">
               <Typewriter
                 words={[
-                  "Software Engineer",
-                  "CSUF Student",
-                  "Software Developer",
-                  "Web Developer",
-                  "Programmer",
+                  "Frontend Developer",
+                  "Student",
                   "React Developer",
-                  "Freelancer",
+                  "Gamer",
+                  "Software Engineer",
                 ]}
                 loop={0}
                 cursor
@@ -82,9 +89,9 @@ const Home = () => {
             viewport={{ once: false }}
             className="my-12 flex flex-col sm:flex-row items-center gap-6 justify-center xl:justify-start"
           >
-            <Link to="contact" smooth>
-              <Button secondary>Contact Me</Button>
-            </Link>
+            <Button onClick={scrollToSection} secondary>
+              Contact Me
+            </Button>
             <Button onClick={handleDownload} icon={downloadIcon}>
               Download CV
             </Button>
