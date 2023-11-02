@@ -12,8 +12,47 @@ import { motion } from "framer-motion";
 // utils
 import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
+import emailjs from "@emailjs/browser";
+import { FormEvent, useRef } from "react";
+
+interface ContactFormData {
+  user_name: string;
+  user_email: string;
+  message: string;
+}
 
 const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const handleSendButtonClick = () => {
+    if (form.current) {
+      form.current.dispatchEvent(new Event("submit"));
+    }
+  };
+  const sendEmail = (e: FormEvent) => {
+    e.preventDefault();
+    if (form.current) {
+      const formData: ContactFormData = new FormData(form.current) as any;
+
+      emailjs
+        .sendForm(
+          "service_6xquh79",
+          "template_6st1yon",
+          form.current,
+          "0Vy8NjbnZKeFAaa6L"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("Your message has been sent!");
+          },
+          (error) => {
+            console.log(error.text);
+            alert("Your message has not been sent!");
+          }
+        );
+    }
+  };
   return (
     <div
       id="contact"
@@ -40,22 +79,41 @@ const Contact = () => {
             <img src={Angry} alt="" className=" max-h-[348px] max-w-[350px]" />
           </div>
         </div>
-        <div className="flex-1 flex flex-col gap-6 w-full max-w-[696px]">
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <LabelInput labelText="Your name" placeholderText="Name" />
-            <LabelInput labelText="Your email" placeholderText="Email" />
-          </div>
-
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <LabelInput
-              labelText="Your message"
-              placeholderText="Message"
-              textarea
-            />
-          </div>
-
-          <Button secondary>Send Message</Button>
-        </div>
+        {
+          <form ref={form} onSubmit={sendEmail}>
+            <div className="flex-1 flex flex-col gap-6 w-full max-w-[696px]">
+              <div className="flex flex-col sm:flex-row items-center gap-6">
+                <LabelInput labelText="Your name" placeholderText="Name" />
+                <LabelInput labelText="Your email" placeholderText="Email" />
+              </div>
+              <div className="flex flex-col sm:flex-row items-center gap-6">
+                <LabelInput
+                  labelText="Your message"
+                  placeholderText="Message"
+                  textarea
+                />
+              </div>
+              <button
+                type="submit"
+                value="Send"
+                className=" hover:bg-hoverSecondary  bg-secondary : bg-accent transition-all ease-linear duration-300 py-2.5 px-8 rounded-full text-white text-base sm:text-lg text-bold relative w-full sm:w-fit"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        }
+        {/*
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
+        </form>
+      */}
       </div>
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-divider" />
     </div>
