@@ -41,10 +41,13 @@ const About = () => {
           </Reveal>
           <Reveal>
             <p className="text-center xl:text-start text-base sm:text-lg text-textSecondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              sunt vitae ipsa. Fuga sint unde alias adipisci sequi perferendis
-              esse. Veritatis nostrum, nihil atque quaerat modi dolore deserunt
-              similique vel.
+              Hello there! I'm Justin Sohn, a Computer Science major at
+              California State University, Fullerton. My enthusiasm lies in
+              front-end software engineering, and I'm on the lookout for
+              exciting internships and entry-level opportunities to enhance my
+              skills and experiences. Feel free to connect with me on social
+              media or drop me an email if you have any questions or concerns.
+              Thanks a bunch!
             </p>
           </Reveal>
           <motion.div
@@ -55,6 +58,7 @@ const About = () => {
             viewport={{ once: false }}
             className="flex items-center justify-center xl:justify-start gap-6"
           >
+            {/*
             <a href="https://www.facebook.com/justin.sohn.14" target="_blank">
               <FacebookIcon
                 style={{ fontSize: 50 }}
@@ -67,6 +71,7 @@ const About = () => {
                 className="text-secondary"
               />
             </a>
+            */}
             <a href="https://www.linkedin.com/in/sohnjustin/" target="_blank">
               <LinkedInIcon
                 style={{ fontSize: 50 }}
