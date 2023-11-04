@@ -4,6 +4,7 @@ import uiUxThree from "../assets/ui-ux-project-three.svg";
 import SpotifyClone from "../assets/spotify_logo.png";
 import webTwo from "../assets/web-project-two.jpeg";
 import webThree from "../assets/web-project-three.jpeg";
+import KeyBored from "../assets/keybored.jpg";
 
 interface Project {
   id: number;
@@ -37,13 +38,14 @@ export const projects = [
     img: SpotifyClone,
     title: "Spotify Full Stack Clone",
   },
-  /*
+  
   {
     id: 4,
     category: "project",
-    img: webTwo,
-    title: "Project 2 ",
+    img: KeyBored,
+    title: "KeyBored",
   },
+  /*
   {
     id: 5,
     category: "project",
