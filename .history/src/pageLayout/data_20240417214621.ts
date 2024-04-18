@@ -1,17 +1,17 @@
 import CSUFWordle from "../assets/CSUF-Wordle-Play-Page.png";
 import CSUFDatabase from "../assets/CSUFDatabase.png";
+import uiUxThree from "../assets/ui-ux-project-three.svg";
 import SpotifyClone from "../assets/spotify_logo.png";
+import webTwo from "../assets/web-project-two.jpeg";
+import webThree from "../assets/web-project-three.jpeg";
 import KeyBored from "../assets/keybored.jpg";
-import MumbleInstantMessenger from "../assets/MumbleInstantMessenger.png";
 
-/*
 interface Project {
   id: number;
   category: string;
   img: string;
   title: string;
 }
-*/
 export const projects = [
   {
     id: 0,
@@ -28,7 +28,7 @@ export const projects = [
   {
     id: 2,
     category: "professional",
-    img: MumbleInstantMessenger,
+    img: uiUxThree,
     title: "Mumble Instant Messenger",
   },
 

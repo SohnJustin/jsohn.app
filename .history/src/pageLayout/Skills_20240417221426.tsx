@@ -25,8 +25,6 @@ const Skills = () => {
             <h2 className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] font-bold text-textPrimary">
               My <span className="text-secondary">Skills</span>
             </h2>
-          </Reveal>
-          <Reveal>
             <ul className="text-lg text-textPrimary mt-6 list-disc list-inside">
               <li>
                 <strong>Programming Languages:</strong> JavaScript/TypeScript,

@@ -1,4 +1,7 @@
+// views
 import { About, Contact, Home, Projects, Skills } from "./pageLayout";
+
+// components
 import { Menu } from "./components";
 
 function App() {

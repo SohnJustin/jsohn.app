@@ -1,11 +1,12 @@
 import projectsPageImg from "../assets/projects-page.svg";
-import jsLogo from "../assets/JavaScriptLOGO.png";
+import jsLogo from "../assets/JavaScriptLOGO.png"; // Add paths to your images
 import mernLogo from "../assets/MERNstack.png";
 import firebaseLogo from "../assets/firebaseLogo.png";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { transition } from "../utils/transition";
-import { Reveal } from "../components";
+
+import { Button, Card, Reveal } from "../components";
 
 const Skills = () => {
   return (
@@ -25,18 +26,12 @@ const Skills = () => {
             <h2 className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] font-bold text-textPrimary">
               My <span className="text-secondary">Skills</span>
             </h2>
-          </Reveal>
-          <Reveal>
-            <ul className="text-lg text-textPrimary mt-6 list-disc list-inside">
-              <li>
-                <strong>Programming Languages:</strong> JavaScript/TypeScript,
-                C++, Python, SwiftUI
-              </li>
-              <li>
-                <strong>Frameworks/Databases:</strong> MERN Stack, React Native,
-                Firebase
-              </li>
-            </ul>
+            <div className="text-lg text-textPrimary mt-6">
+              <h3>Programming Languages:</h3>
+              <p>JavaScript/TypeScript, C++, Python, SwiftUI</p>
+              <h3>Frameworks/Databases:</h3>
+              <p>MERN Stack, React Native, Firebase</p>
+            </div>
           </Reveal>
         </div>
         <motion.div
@@ -47,10 +42,12 @@ const Skills = () => {
           viewport={{ once: false }}
           className="flex-1 flex flex-wrap justify-center items-center gap-4"
         >
-          <img src={jsLogo} alt="JavaScript Logo" className="w-40 h-40" />
-          <img src={mernLogo} alt="MERN Stack Logo" className="w-80 h-40" />
-          <img src={firebaseLogo} alt="Firebase Logo" className="w-83 h-40" />
-          {/* Add more images as needed */}
+          <div className="flex-1 flex flex-wrap justify-center items-center gap-4">
+            <img src={jsLogo} alt="JavaScript Logo" className="w-40 h-40" />
+            <img src={mernLogo} alt="TypeScript Logo" className="w-80 h-40" />
+            <img src={firebaseLogo} alt="Firebase Logo" className="w-83 h-40" />
+            {/* Add more images as needed */}
+          </div>
         </motion.div>
       </div>
     </div>
