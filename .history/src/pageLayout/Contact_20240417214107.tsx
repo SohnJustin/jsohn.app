@@ -1,7 +1,15 @@
+// assets
 import contactPageImg from "../assets/contact-page.svg";
+import contactIllustration from "../assets/contact-illustration.svg";
 import Laugh from "../assets/LAUGH.png";
-import { LabelInput, Reveal } from "../components";
+
+// components
+import { Button, LabelInput, Reveal } from "../components";
+
+// framer-motion
 import { motion } from "framer-motion";
+
+// utils
 import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 import emailjs from "@emailjs/browser";
@@ -16,11 +24,11 @@ interface ContactFormData {
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
 
-  // const handleSendButtonClick = () => {
-  //   if (form.current) {
-  //     form.current.dispatchEvent(new Event("submit"));
-  //   }
-  // };
+  const handleSendButtonClick = () => {
+    if (form.current) {
+      form.current.dispatchEvent(new Event("submit"));
+    }
+  };
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
     if (form.current) {

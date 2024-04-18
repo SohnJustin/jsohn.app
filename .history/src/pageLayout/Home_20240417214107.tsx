@@ -1,14 +1,26 @@
+// assets
 import homePageImg from "../assets/home-page.svg";
+import homePageIllustation from "../assets/hero-illustration.svg";
 import downloadIcon from "../assets/download-btn-icon.svg";
 import Wave from "../assets/WAVE.png";
 import MyResume from "../assets/JustinSohnResume.pdf";
+
+// components
 import { Button } from "../components";
-import { animateScroll } from "react-scroll";
+
+// react-scroll
+import { Link, animateScroll } from "react-scroll";
+
+// react-simple-typewriter
 import { Typewriter } from "react-simple-typewriter";
+
+// framer-motion
 import { motion } from "framer-motion";
+
+// utils
 import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
-//import { offset } from "@popperjs/core";
+import { offset } from "@popperjs/core";
 
 const Home = () => {
   const handleDownload = () => {

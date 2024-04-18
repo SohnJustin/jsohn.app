@@ -1,9 +1,19 @@
+// assets
 import aboutPageImg from "../assets/about-me-page.svg";
+import aboutIllustration from "../assets/about-illustration.svg";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Angry from "../assets/ANGRY.png";
+
+// components
 import { Reveal } from "../components";
+
+// framer-motion
 import { motion } from "framer-motion";
+
+// utils
 import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
 

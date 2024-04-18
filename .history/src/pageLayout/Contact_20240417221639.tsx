@@ -16,11 +16,11 @@ interface ContactFormData {
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
 
-  // const handleSendButtonClick = () => {
-  //   if (form.current) {
-  //     form.current.dispatchEvent(new Event("submit"));
-  //   }
-  // };
+  const handleSendButtonClick = () => {
+    if (form.current) {
+      form.current.dispatchEvent(new Event("submit"));
+    }
+  };
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
     if (form.current) {

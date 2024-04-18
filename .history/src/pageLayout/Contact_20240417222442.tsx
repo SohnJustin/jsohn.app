@@ -24,7 +24,7 @@ const Contact = () => {
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
     if (form.current) {
-      const formData: ContactFormData = new FormData(form.current) as any;
+      // const formData: ContactFormData = new FormData(form.current) as any;
 
       emailjs
         .sendForm(

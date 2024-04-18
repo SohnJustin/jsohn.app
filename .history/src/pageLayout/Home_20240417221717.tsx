@@ -8,7 +8,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { transition } from "../utils/transition";
 import { fadeIn, scale } from "../utils/variants";
-//import { offset } from "@popperjs/core";
+import { offset } from "@popperjs/core";
 
 const Home = () => {
   const handleDownload = () => {
