@@ -7,11 +7,11 @@ import { transition } from "../utils/transition";
 import emailjs from "@emailjs/browser";
 import { FormEvent, useRef } from "react";
 
-// interface ContactFormData {
-//   user_name: string;
-//   user_email: string;
-//   message: string;
-// }
+interface ContactFormData {
+  user_name: string;
+  user_email: string;
+  message: string;
+}
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
