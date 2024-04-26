@@ -64,7 +64,8 @@ const Skills = () => {
                 <strong className="text-secondary">Soft Skills: </strong>{" "}
                 Problem-solving, Communication Skills, Team collaboration,
                 Software Testing, Troubleshooting and Debugging, Agile
-                methodology, Adaptive, Analytical, Innovative, Flexible,
+                methodology ( Scrum / Kanban), Adaptive, Analytical, Innovative,
+                Flexible,
               </li>
             </ul>
           </Reveal>
