@@ -29,10 +29,8 @@ const Skills = () => {
           <Reveal>
             <ul className=" xl:text-xl lg:text-xl text-textPrimary mt-6 list-disc list-inside ">
               <li>
-                <strong className="text-secondary">
-                  Programming Languages:
-                </strong>{" "}
-                JavaScript/TypeScript, C++, Python, Java, SQL
+                <strong>Programming Languages:</strong> JavaScript/TypeScript,
+                C++, Python, Java, SQL
               </li>
               <li>
                 <strong className="text-secondary">Front-End: </strong> React,
@@ -61,10 +59,10 @@ const Skills = () => {
                 ChatGPT, Google Excel, Vercel
               </li>
               <li>
-                <strong className="text-secondary">Soft Skills: </strong>{" "}
-                Problem-solving, Communication Skills, Team collaboration,
-                Software Testing, Troubleshooting and Debugging, Agile
-                methodology, Adaptive, Analytical, Innovative, Flexible,
+                <strong>Soft Skills: </strong> Problem-solving, Communication
+                Skills, Team collaboration, Software Testing, Troubleshooting
+                and Debugging, Agile methodology ( Scrum / Kanban), Adaptive,
+                Analytical, Innovative, Flexible,
               </li>
             </ul>
           </Reveal>

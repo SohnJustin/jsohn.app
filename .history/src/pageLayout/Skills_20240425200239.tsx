@@ -19,7 +19,7 @@ const Skills = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-screen-2xl flex flex-row lg:gap-10 w-full lg:py-16 lg:px-12">
+      <div className="max-w-screen-2xl flex flex-row gap-10 w-full py-16 px-12">
         <div className="flex-1 sm:w-full md:w-full">
           <Reveal>
             <h2 className="text-center xl:text-start text-4xl sm:text-5xl lg:text-[64px] font-bold text-textPrimary md:text-center">
@@ -27,44 +27,40 @@ const Skills = () => {
             </h2>
           </Reveal>
           <Reveal>
-            <ul className=" xl:text-xl lg:text-xl text-textPrimary mt-6 list-disc list-inside ">
+            <ul className="md:text-center xl:text-xl lg:text-xl text-textPrimary mt-6 list-disc list-inside ">
               <li>
-                <strong className="text-secondary">
-                  Programming Languages:
-                </strong>{" "}
-                JavaScript/TypeScript, C++, Python, Java, SQL
+                <strong>Programming Languages:</strong> JavaScript/TypeScript,
+                C++, Python, Java, SQL
               </li>
               <li>
-                <strong className="text-secondary">Front-End: </strong> React,
-                Next.js, HTML / HTML5, CSS3, Bootstrap, TailwinCSS, MaterialUI,
-                jQuery, Styled-Components, React-Native
+                <strong>Front-End: </strong> React, Next.js, HTML / HTML5, CSS3,
+                Bootstrap, TailwinCSS, MaterialUI, jQuery, Styled-Components,
+                React-Native
               </li>
               <li>
-                <strong className="text-secondary">Back-End:</strong> Node.js,
-                Express.js, PHP, JSON Web Tokens
+                <strong>Back-End:</strong> Node.js, Express.js, PHP, JSON Web
+                Tokens
               </li>
               <li>
-                <strong className="text-secondary">APIs:</strong> REST /
-                RESTful, GraphQL, Axios
+                <strong>APIs:</strong> REST / RESTful, GraphQL, Axios
               </li>
               <li>
-                <strong className="text-secondary">Databases</strong>{" "}
-                PostgresSQL, MongoDB, Firebase / Firestone, Supabase, NoSQL
+                <strong>Databases</strong> PostgresSQL, MongoDB, Firebase /
+                Firestone, Supabase, NoSQL
               </li>
               <li>
-                <strong className="text-secondary">DevOps: </strong> Amazon Web
-                Services (AWS), CI/CD, Google Cloud Platform
+                <strong>DevOps: </strong> Amazon Web Services (AWS), CI/CD,
+                Google Cloud Platform
               </li>
               <li>
-                <strong className="text-secondary">Tools:</strong> Github,
-                Visual Studio Code, Trello, Figma, NPM, Git version control,
-                ChatGPT, Google Excel, Vercel
+                <strong>Tools:</strong> Github, Visual Studio Code, Trello,
+                Figma, NPM, Git version control, ChatGPT, Google Excel, Vercel
               </li>
               <li>
-                <strong className="text-secondary">Soft Skills: </strong>{" "}
-                Problem-solving, Communication Skills, Team collaboration,
-                Software Testing, Troubleshooting and Debugging, Agile
-                methodology, Adaptive, Analytical, Innovative, Flexible,
+                <strong>Soft Skills: </strong> Problem-solving, Communication
+                Skills, Team collaboration, Software Testing, Troubleshooting
+                and Debugging, Agile methodology ( Scrum / Kanban), Adaptive,
+                Analytical, Innovative, Flexible,
               </li>
             </ul>
           </Reveal>
@@ -76,7 +72,7 @@ const Skills = () => {
           initial="hidden"
           whileInView={"visible"}
           viewport={{ once: false }}
-          className="md:flex-1 flex flex-wrap justify-center items-center gap-4 "
+          className="flex-1 flex flex-wrap justify-center items-center gap-4 "
         >
           <img
             src={jsLogo}

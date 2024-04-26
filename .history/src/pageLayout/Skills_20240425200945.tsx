@@ -61,10 +61,10 @@ const Skills = () => {
                 ChatGPT, Google Excel, Vercel
               </li>
               <li>
-                <strong className="text-secondary">Soft Skills: </strong>{" "}
-                Problem-solving, Communication Skills, Team collaboration,
-                Software Testing, Troubleshooting and Debugging, Agile
-                methodology, Adaptive, Analytical, Innovative, Flexible,
+                <strong>Soft Skills: </strong> Problem-solving, Communication
+                Skills, Team collaboration, Software Testing, Troubleshooting
+                and Debugging, Agile methodology ( Scrum / Kanban), Adaptive,
+                Analytical, Innovative, Flexible,
               </li>
             </ul>
           </Reveal>
