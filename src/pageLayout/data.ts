@@ -3,6 +3,8 @@ import CSUFDatabase from "../assets/CSUFDatabase.png";
 import SpotifyClone from "../assets/spotify_logo.png";
 import KeyBored from "../assets/keybored.jpg";
 import MumbleInstantMessenger from "../assets/MumbleInstantMessenger.png";
+import Tahooks from "../assets/tahooks.png";
+import SwipeDine from "../assets/SwipeDine.png";
 
 /*
 interface Project {
@@ -16,14 +18,14 @@ export const projects = [
   {
     id: 0,
     category: "professional",
-    img: CSUFWordle,
-    title: "CSUF Themed Wordle",
+    img: Tahooks,
+    title: "Tahooks Quiz App",
   },
   {
     id: 1,
     category: "professional",
-    img: CSUFDatabase,
-    title: "Student Database Website",
+    img: SwipeDine,
+    title: "Swipe&Dine React Native App",
   },
   {
     id: 2,
