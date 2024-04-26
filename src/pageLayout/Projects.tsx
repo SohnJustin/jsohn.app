@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variants";
 import { transition } from "../utils/transition";
 
-type Category = "professional" | "project";
+type Category = "professional" | "project" | "all";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] =
@@ -15,8 +15,11 @@ const Projects = () => {
   const filterProjects = () => {
     if (activeCategory === "professional") {
       return projects.filter((item) => item.category === "professional");
-    } else {
+    } else if (activeCategory === "project") {
       return projects.filter((item) => item.category === "project");
+    } else {
+      // all
+      return projects;
     }
   };
   return (
@@ -47,10 +50,16 @@ const Projects = () => {
             className="flex items-center gap-4 justify-center xl:justify-start flex-col sm:flex-row"
           >
             <Button
+              secondary={activeCategory === "all" ? true : false}
+              onClick={() => setActiveCategory("all")}
+            >
+              All
+            </Button>
+            <Button
               secondary={activeCategory === "professional" ? true : false}
               onClick={() => setActiveCategory("professional")}
             >
-              Professional Experience
+              School Projects
             </Button>
             <Button
               secondary={activeCategory === "project" ? true : false}
