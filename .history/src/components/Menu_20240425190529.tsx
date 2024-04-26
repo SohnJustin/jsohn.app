@@ -28,11 +28,7 @@ const Menu = () => {
         </Tooltip>
       </Link>
       <Link to="skills" smooth>
-        <Tooltip title="Skills" placeholder="top" arrow>
-          <IconButton className="group">
-            <DrawIcon className="text-white group-hover:text-secondary" />
-          </IconButton>
-        </Tooltip>
+        <Tooltip title="Skills" placeholder="top" arrow></Tooltip>
       </Link>
       <Link to="projects" smooth>
         <Tooltip title="Projects" placeholder="top" arrow>
