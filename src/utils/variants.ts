@@ -1,10 +1,11 @@
-export const fadeIn = (direction: "up" | "down") => {
+export const fadeIn = (direction: "up" | "down" | "left" | "right") => {
   return {
     hidden: {
       opacity: 0,
-      y: direction === "up" ? -85 : 85,
+      y: direction === "up" ? -85 : direction === "down" ? 85 : 0,
+      x: direction === "left" ? -85 : direction === "right" ? 85 : 0,
     },
-    visible: { opacity: 1, y: 0 },
+    visible: { opacity: 1, y: 0, x: 0 },
   };
 };
 
