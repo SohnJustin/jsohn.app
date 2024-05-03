@@ -7,7 +7,7 @@ import { animateScroll } from "react-scroll";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import { transition } from "../utils/transition";
-import { fadeIn, scale } from "../utils/variants";
+import { fadeIn } from "../utils/variants";
 //import { offset } from "@popperjs/core";
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
       <div className="max-w-screen-2xl flex flex-col xl:flex-row xl:justify-between items-center xl:items-start gap-12 w-full py-16 px-12">
         <div className="w-full xl:w-fit">
           <motion.h1
-            variants={fadeIn("down")}
+            variants={fadeIn("up")}
             transition={transition()}
             initial="hidden"
             whileInView={"visible"}
@@ -55,7 +55,7 @@ const Home = () => {
               <Typewriter
                 words={[
                   "Frontend Developer",
-                  "Student",
+                  "Full Stack Developer",
                   "React Developer",
                   "Gamer",
                   "Software Engineer",
@@ -86,7 +86,7 @@ const Home = () => {
           </motion.div>
         </div>
         <motion.img
-          variants={scale()}
+          variants={fadeIn("right")}
           transition={transition()}
           initial="hidden"
           whileInView={"visible"}

@@ -6,6 +6,7 @@ import { Reveal } from "../components";
 import { motion } from "framer-motion";
 import { fadeIn, scale } from "../utils/variants";
 import { transition } from "../utils/transition";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const About = () => {
   return (
@@ -40,40 +41,66 @@ const About = () => {
               Thanks a bunch!
             </p>
           </Reveal>
-          <motion.div
-            variants={fadeIn("up")}
-            transition={transition()}
-            initial="hidden"
-            whileInView={"visible"}
-            viewport={{ once: false }}
-            className="flex items-center justify-center xl:justify-start gap-6"
-          >
-            {/*
-            <a href="https://www.facebook.com/justin.sohn.14" target="_blank">
-              <FacebookIcon
-                style={{ fontSize: 50 }}
-                className="text-secondary"
-              />
-            </a>
-            <a href="https://www.instagram.com/justinsohn2/" target="_blank">
-              <InstagramIcon
-                style={{ fontSize: 50 }}
-                className="text-secondary"
-              />
-            </a>
-            */}
-            <a href="https://www.linkedin.com/in/sohnjustin/" target="_blank">
-              <LinkedInIcon
-                style={{ fontSize: 50 }}
-                className="text-secondary"
-              />
-            </a>
-            <a href="https://github.com/SohnJustin" target="_blank">
-              <GitHubIcon style={{ fontSize: 50 }} className="text-secondary" />
-            </a>
-          </motion.div>
+          <div className="flex items-center justify-center xl:justify-start gap-6">
+            <motion.div
+              variants={fadeIn("down")} // For LinkedIn icon, fading in from the left
+              transition={{ delay: 0.3, ...transition() }} // Add a delay to stagger the animations
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false }}
+              className="flex items-center justify-center xl:justify-start gap-6"
+            >
+              <a
+                href="https://www.instagram.com/justinsohn2/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <InstagramIcon
+                  style={{ fontSize: 50 }}
+                  className="text-secondary"
+                />
+              </a>
+            </motion.div>
+            <motion.div
+              variants={fadeIn("down")} // For LinkedIn icon, fading in from the left
+              transition={{ delay: 0.6, ...transition() }} // Add a delay to stagger the animations
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false }}
+              className="flex items-center justify-center xl:justify-start gap-6"
+            >
+              <a
+                href="https://www.linkedin.com/in/sohnjustin/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <LinkedInIcon
+                  style={{ fontSize: 50 }}
+                  className="text-secondary"
+                />
+              </a>
+            </motion.div>
+            <motion.div
+              variants={fadeIn("down")} // For GitHub icon, fading in from the right
+              transition={{ delay: 0.9, ...transition() }} // Add a delay to stagger the animations
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false }}
+              className="flex items-center justify-center xl:justify-start gap-6"
+            >
+              <a
+                href="https://github.com/SohnJustin"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <GitHubIcon
+                  style={{ fontSize: 50 }}
+                  className="text-secondary"
+                />
+              </a>
+            </motion.div>
+          </div>
         </div>
-
         <div className="flex-1 flex items-center justify-center">
           <motion.img
             variants={scale()}
