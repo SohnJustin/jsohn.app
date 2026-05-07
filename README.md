@@ -1,46 +1,86 @@
-# Getting Started with Create React App
+# jsohn.app — Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+my personal portfolio containing updated information to May 2026, built with Next.js 14 and TailwindCSS.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+- **Framework** — Next.js 14 (App Router, static export)
+- **Styling** — TailwindCSS 3
+- **Animations** — Framer Motion 11
+- **Fonts** — Syne (headings), DM Sans (body), JetBrains Mono (labels) via `next/font/google`
+- **Contact form** — EmailJS
+- **Language** — TypeScript
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Install dependencies:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+Run the development server:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run dev
+```
 
-### `npm run build`
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Scripts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Command         | Description                              |
+| --------------- | ---------------------------------------- |
+| `npm run dev`   | Start local dev server at localhost:3000 |
+| `npm run build` | Build for production                     |
+| `npm run start` | Serve the production build locally       |
+| `npm run lint`  | Run ESLint                               |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+```
+src/
+└── app/
+    ├── layout.tsx   # Root layout, font config, metadata
+    ├── page.tsx     # All sections (Hero, About, Skills, Experience, Projects, Contact)
+    └── globals.css  # Tailwind directives, dot-grid background, blink keyframe
+public/
+└── Resume.pdf       # Downloadable CV
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Sections
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Hero** — Name, typewriter role, CV download, social links
+- **About** — Bio, stats grid with resume metrics
+- **Skills** — Languages, Frameworks, Tools, Databases
+- **Experience** — Work history and education
+- **Projects** — Project cards with tech stack and GitHub links
+- **Contact** — EmailJS contact form
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Changes from v1 (Create React App)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Framework migration
+- Replaced Create React App with **Next.js 14** (App Router)
+- Removed `react-scripts` and all CRA-specific config (`public/index.html`, `manifest.json`, `react-app-env.d.ts`)
+- Added `next.config.js`, `postcss.config.js`, and migrated to `tailwind.config.ts`
+- Switched from `tsconfig.json` targeting CRA to Next.js bundler module resolution
 
-## Learn More
+### Styling
+- Removed Material UI (`@mui/*`, `@emotion/*`) entirely
+- Replaced with **TailwindCSS 3** utility classes throughout
+- Pure black (`#000`) background with dot-grid radial-gradient pattern
+- Cyan-400 accent rule under every section header
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Dependencies removed
+- `@mui/material`, `@emotion/react`, `@emotion/styled`
+- `react-scroll`, `react-simple-typewriter`, `web-vitals`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Dependencies added
+- `next`, `framer-motion`, `@emailjs/browser`
+- `tailwindcss`, `postcss`, `autoprefixer`
+
+### Content
+- Resume synced to May 2026 version — updated work experience, projects, skills, and stats
+- Added TruAbutment (QA Engineer) as first work experience entry
+- Projects updated: MP4 Transcription Automator, VCT Discord Bot, AI StoryTeller Generator, Swipe&Dine, Mumble
+- Old CRA source files (`src/pageLayout/`, `src/components/`, `src/utils/`, `src/assets/`) removed
