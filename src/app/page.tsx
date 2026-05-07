@@ -339,7 +339,7 @@ function Hero() {
           transition={{ duration: 0.5 }}
           className="font-mono text-[11px] text-zinc-500 tracking-[0.3em] uppercase mb-10"
         >
-          // hello, world
+          Hi there, I&apos;m
         </motion.p>
 
         <motion.h1
@@ -354,7 +354,7 @@ function Hero() {
         >
           Justin
           <br />
-          <span className="text-zinc-400">Weonjun</span>
+          <span className="text-zinc-400 tracking-normal">Weonjun</span>
           <br />
           Sohn
         </motion.h1>
@@ -452,7 +452,7 @@ function Hero() {
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-700"
       >
         <span className="font-mono text-[9px] tracking-[0.35em] uppercase">
-          Scroll
+          Scroll down for more info
         </span>
         <div className="w-px h-8 bg-gradient-to-b from-zinc-700 to-transparent" />
       </motion.div>
@@ -743,7 +743,7 @@ function Contact() {
                 value: "sohnjustin2@gmail.com",
                 href: "mailto:sohnjustin2@gmail.com",
               },
-{ label: "Location", value: "Buena Park, CA", href: null },
+              { label: "Location", value: "Buena Park, CA", href: null },
             ].map((item) => (
               <div key={item.label}>
                 <p className="font-mono text-[10px] text-zinc-600 tracking-[0.2em] uppercase mb-1">
