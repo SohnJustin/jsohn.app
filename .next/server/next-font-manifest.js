@@ -1,0 +1,1 @@
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/Users/justinsohn/github repositories/jsohn.app-1/src/app/layout":["static/media/13971731025ec697-s.p.woff2","static/media/bb3ef058b751a6ad-s.p.woff2","static/media/8a1d8947e5852e30-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
